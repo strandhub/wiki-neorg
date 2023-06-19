@@ -1,0 +1,78 @@
+@document.meta
+title: index
+description: 
+authors: jst
+categories: [
+  todo
+]
+created: 2023-06-17
+updated: 2023-06-18
+version: 1.1.1
+@end
+
+
+
+* Prelude
+  An overview of the different parts that go into the developer experience.
+  Some of these are marked for implementation, while others are pure
+  descriptors. There should be some sort of ranking within these.
+
+  Grouping these by technology does not seem right, rather it should be
+  abstracted away into concepts such as e.g. "Availability"
+
+* Student setup
+  This is heavily inspired from the three part
+  {https://castel.dev/post/lecture-notes-1/}[Blog post]. An example of the
+  lecture notes can be found {/ lecture-notes.png}[here] Key takeaways from
+  this post are 
+
+
+  - Drawable Tex figures (Fast creation)
+  - In-editor concealers that shows math mode within nvim
+  - *Symlinks* to "current-course" 
+  - Dropdown selction box with overviews
+  - Correcting spelling mistakes
+  - Tex specific snippets
+
+** Drawable tex figures 
+  *Drawable Tex figures* are achieved using Inkscape and then added to the latex env
+
+** Current course
+  In particular, the symlink to the current course is a powerful idea that I
+  would like to explore more of. How does this translate into work life that is
+  not as intensely segregated as the course work it was built to support? 
+
+
+** Spelling correction
+  The correcting of spelling mistakes is achieved by
+
+  @code vim
+  setlocal spell
+  set spellang=nl,en_gb
+  inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+  @end
+
+** Tex Specific Snippets
+  Some Tex specific snippets that are interesting include
+
+  beg
+  @code latex
+  \begin{}
+    
+  \end{}
+  @end
+
+** Workflow Shortcuts
+
+
+
+* nvim
+** ( ) Folding
+   - ( ) Setting up keybinds that makes this process easier
+** Hmm
+
+* ( ) tmux
+** ( ) Screen-specific sessions
+  This should make it more intuitive to display info on separate screens, but
+   keep the interaction with these screens in the main window
+

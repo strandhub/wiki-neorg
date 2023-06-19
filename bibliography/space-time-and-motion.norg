@@ -1,0 +1,25 @@
+@document.meta
+title: Space, Time and Motion
+description: 
+authors: Sean Carroll
+categories: [
+  physics
+]
+created: 2023-06-18
+updated: 2023-06-18
+version: 1.1.1
+@end
+
+* Summary
+
+* 1: Conservation
+
+  $ Einstein's equation
+  R_{mu nu} - 1/2 Rg_{mu nu} = 8pi GT_{mu nu}
+
+
+  > Classical mechanics is a theory of patterns, rather than natures or
+  > cause/effect relations, because it doesn't ask "What is the natural state
+  > of the system? or "What caused the system to move in that way?" All it asks
+  > is "What is the system doing at this particular moment?"
+

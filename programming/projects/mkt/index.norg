@@ -1,0 +1,28 @@
+@document.meta
+title: mkt
+description: 
+authors: jst
+categories: [
+  rust
+]
+created: 2023-06-19
+updated: 2023-06-19
+version: 1.1.1
+@end
+
+* Roadmap
+
+  Goals:
+  - CI/CD Pipeline
+  - Server setup
+
+* CLI Overview
+  These CLI is (hopefully) setup to be in congruence with
+  {https://clig.dev/}[CLI guidelines] and the
+  {https://en.wikipedia.org/wiki/Unix_philosophy}[UNIX philosophy]
+
+  - dag
+  -- add <ID> <PARENTS>
+  -- print
+     -s, --size
+  -- clear
