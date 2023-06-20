@@ -6,7 +6,7 @@ categories: [
   rust
 ]
 created: 2023-06-19
-updated: 2023-06-19
+updated: 2023-06-20
 version: 1.1.1
 @end
 
@@ -15,6 +15,8 @@ version: 1.1.1
   Goals:
   - CI/CD Pipeline
   - Server setup
+  - Lazily evaluated signal passing data loader
+  - TUI
 
 * CLI Overview
   These CLI is (hopefully) setup to be in congruence with
@@ -22,7 +24,7 @@ version: 1.1.1
   {https://en.wikipedia.org/wiki/Unix_philosophy}[UNIX philosophy]
 
   - dag
-  -- add <ID> <PARENTS>
+  -- add <ID> [PARENTS]
   -- print
      -s, --size
   -- clear
