@@ -6,20 +6,79 @@ categories: [
   physics
 ]
 created: 2023-06-18
-updated: 2023-06-18
+updated: 2023-06-21
 version: 1.1.1
 @end
 
 * Summary
 
 * 1: Conservation
+** Predictability
 
-  $ Einstein's equation
-  R_{mu nu} - 1/2 Rg_{mu nu} = 8pi GT_{mu nu}
+   > The most basic kind of predictability is *conservation*, the fact that
+   > some things don't change at all
 
+  $ Conservation
+   Staying constant over time
+
+   Energy can be thought of as a property of an object, instead of a substance
+   itself. An object can have energy because it's moving, is warm, located high
+   above the ground and so on. *Conservation* of energy is then the idea that
+   this total of energy doesn't vanish, but is translated between various
+   _states_ 
+
+   $ Mass
+   The resistance an object has to being accelerated
+
+   The *momentum* of an object is /mass * velocity/ if relativity is ignored,
+   or /p = mv/
+
+** Classical Mechanics
+   Invented by /Isaac Newton/ in 1687, *Classical Mechanics* (CM) is theory
+   that the world adheres to definite, measurable values and deterministic
+   rules. It can be thought of as a counterpart to *Quantum Mechanics*, but you
+   don't quite know what that is yet. A subset of CM is then *Newtonian
+   Mechanics* which adds ideas about space and time
 
   > Classical mechanics is a theory of patterns, rather than natures or
   > cause/effect relations, because it doesn't ask "What is the natural state
   > of the system? or "What caused the system to move in that way?" All it asks
   > is "What is the system doing at this particular moment?"
+
+*** Conservation of Information
+   From the deterministic descriptors of the world of CM there is the
+   capability of /describing the system at any point in time, given the
+   complete state of the system at any other point in time/. Notice that the
+   statement made no assumptions as to the ordering of the two points. We could
+   just aswell describe the past as we can describe the future. 
+
+   This concept was implied in CM and not brought out into the light until 1814
+   by /Pierre-Simon *Laplace*/ and is called *Conservation of Information*.
+
+   As an aside, this aligns perfectly with your fiery-hot take that everything
+   is predetermined. The initial conditions at the beginning of the universe,
+   completely determine what happens today.
+
+*** Conservation of Energy
+
+    $ Kinetic energy
+    E = 1/2 * mv²,
+    where E and m are scalars (energy and mass respectively) and v is the
+    velocity. Velocity squared is taken to mean the dot product.
+
+    $ Potential energy
+    E = mgh,
+    where m is the mass, g is the gravitational constant (on Earth this is 9.8)
+    and h is the elevation.
+
+    If a ball is rolling on a frictionless hill, the total energy E_kin + E_pot
+    remains constant. As the ball lies near motionless at the top, it will have
+    a large amount of potential energy, but as it starts rolling down the hill,
+    it will be converted into kinetic energy.
+
+
+  $ Einstein's equation
+  R_{mu nu} - 1/2 Rg_{mu nu} = 8pi GT_{mu nu}
+
+
 
