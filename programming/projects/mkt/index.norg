@@ -6,7 +6,7 @@ categories: [
   rust
 ]
 created: 2023-06-19
-updated: 2023-06-20
+updated: 2023-06-24
 version: 1.1.1
 @end
 
@@ -17,6 +17,28 @@ version: 1.1.1
   - Server setup
   - Lazily evaluated signal passing data loader
   - TUI
+
+* Data Loader
+  $ Entry
+  An `Entry` describes identifying information on a data source. For ts1 this
+  is entirely summed up in (CurveId, ScenarioId(s)). 
+
+  An entry can then be turned into an actionable item (In this case something
+  to be downloaded and polled for a specific `ForecastWindow`). This is passed
+  on to the `DAG` which places it with respect to its dependents.
+
+  $ Collection
+  A `Collection` joins together multiple actionable items (NOT entries, as the
+  collection only makes sense on entries that have already been restricted to a
+  specific `ForecastWindow`).
+
+  $ PollItem
+  Executing a `PollItem` returns the last updated timestamp of its producer
+
+  When adding an *actionable* item to the `PollPool`, check if it can be
+  polled. If `true`, sum with alike `PollItems`, if `false` add to a list that
+  shows that the Pool knows of the item, but is not able to poll it.
+
 
 * CLI Overview
   These CLI is (hopefully) setup to be in congruence with
